@@ -2,3 +2,13 @@
 Source/Compile/
 
 Source/Game/
+
+Halite2_Python3/\.idea/
+
+Halite2_Python3/Game/
+
+Halite2_Python3/hlt/__pycache__/
+
+Halite2_Python3/archive/
+
+hlt_client/hlt_client/__pycache__/
