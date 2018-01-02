@@ -1,25 +1,20 @@
 """
-Welcome to your first Halite-II bot!
+Simple bot, based on the first Halite-II 'Settler' bot!
 
-This bot's name is Settler. It's purpose is simple (don't expect it to win complex games :) ):
-1. Initialize game
-2. If a ship is not docked and there are unowned planets
-2.a. Try to Dock in the planet if close enough
-2.b If not, go towards the planet
-
-Note: Please do not place print statements here as they are used to communicate with the Halite engine. If you need
-to log anything use the logging module.
 """
 # Let's start by importing the Halite Starter Kit so we can interface with the Halite engine
 import hlt
 # Then let's import the logging module so we can print out information
 import logging
+# Import bot name string. This file will be changed by a batch script
+from BotName import botName
+
 
 # GAME START
 # Here we define the bot's name as Settler and initialize the game, including communication with the Halite engine.
-game = hlt.Game("Settler")
+game = hlt.Game(botName)
 # Then we print our start message to the logs
-logging.info("Starting my Settler bot!")
+logging.info("Starting " + botName + "!")
 
 while True:
     # TURN START
